@@ -11,8 +11,7 @@ var schema = buildSchema(`
     },
     type Mutation {
         updateCourseTopic(id: Int!, topic: String!): Course
-        addCourse(
-          id: Int!, 
+        addCourse( 
           title: String!, 
           author: String!, 
           description: String!, 
@@ -96,10 +95,10 @@ var updateCourseTopic = function ({ id, topic }) {
 };
 
 //Add course to array
-var addCourse = function ({ id, title, author, description, topic, url }) {
+var addCourse = function ({ title, author, description, topic, url }) {
   coursesData.push((course) => {
-    if (id, title, author, description, topic, url) {
-      course.id = id;
+    if (title, author, description, topic, url) {
+      course.id = coursesData.length+1;
       course.title = title;
       course.author = author;
       course.description = description;
