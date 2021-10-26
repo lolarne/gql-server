@@ -75,6 +75,7 @@ var getCourses = function (args) {
   }
 };
 
+//Get courses which include the argument in their titles
 var getCoursesTitle = function (args) {
   if (args.title) {
     var title = args.title;
@@ -94,6 +95,7 @@ var updateCourseTopic = function ({ id, topic }) {
   return coursesData.filter((course) => course.id === id)[0];
 };
 
+//Add course to array
 var addCourse = function ({ id, title, author, description, topic, url }) {
   coursesData.map((course) => {
     if (id, title, author, description, topic, url) {
