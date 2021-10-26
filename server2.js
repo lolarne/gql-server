@@ -97,7 +97,7 @@ var updateCourseTopic = function ({ id, topic }) {
 
 //Add course to array
 var addCourse = function ({ id, title, author, description, topic, url }) {
-  coursesData.map((course) => {
+  coursesData.push((course) => {
     if (id, title, author, description, topic, url) {
       course.id = id;
       course.title = title;
